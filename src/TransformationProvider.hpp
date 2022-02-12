@@ -12,6 +12,12 @@ public:
         return false;
     };
 
+    virtual bool isStatic()
+    {
+        std::cout << "Warning/Error: TransformationProvider::isStatic() this method implementation is just a dummy and should not have been called" <<  std::endl;
+        return false; 
+    }
+
     std::string providerName;
     std::string portName;
 };
